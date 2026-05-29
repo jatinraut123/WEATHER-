@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Weather App</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="weather-box">
+
+      <h1>Weather App</h1>
+
+      <!-- Search -->
+      <div class="search-box">
+        <input
+          type="text"
+          id="cityInput"
+          placeholder="Enter city name"
+        />
+
+        <button id="searchBtn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <!-- Weather Info -->
+      <div class="weather-info">
+
+        <img
+          id="weatherIcon"
+          src="https://openweathermap.org/img/wn/01d@2x.png"
+          alt="Weather Icon"
+        />
+
+        <h2 id="cityName">Kathmandu</h2>
+
+        <h3 id="temperature">25°C</h3>
+
+        <p id="description">Clear Sky</p>
+
+        <div class="details">
+
+          <div class="detail-box">
+            <i class="fa-solid fa-water"></i>
+            <div>
+              <p>Humidity</p>
+              <span id="humidity">60%</span>
+            </div>
+          </div>
+
+          <div class="detail-box">
+            <i class="fa-solid fa-wind"></i>
+            <div>
+              <p>Wind</p>
+              <span id="wind">3 km/h</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
